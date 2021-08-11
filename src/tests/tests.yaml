@@ -1,0 +1,9 @@
+charm_name: cinder-truenas
+tests:
+  - tests.tests_cinder_truenas.CinderTrueNASTest
+configure:
+  - zaza.openstack.charm_tests.keystone.setup.add_demo_user
+gate_bundles:
+  - xenial-wallaby
+smoke_bundles:
+  - xenial-wallaby
