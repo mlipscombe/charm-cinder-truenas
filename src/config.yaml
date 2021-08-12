@@ -1,7 +1,7 @@
 options:
   driver-source:
     type: string
-    default:
+    default: ppa:mlipscombe/openstack
     description: |
       Optional configuration to support use of additional sources such as:
         - ppa:myteam/ppa
@@ -15,3 +15,39 @@ options:
     description: |
       Key ID to import to the apt keyring to support use with arbitary source
       configuration from outside of Launchpad archives or PPA's.
+  ixsystems-api-key:
+    type: string
+    description: "TrueNAS API key"
+    default:
+  ixsystems-server-hostname:
+    type: string
+    description: "IP address of TrueNAS host"
+    default:
+  ixsystems-volume-backend-name:
+    type: string
+    description: "Backend volume name"
+    default: "TrueNAS"
+  ixsystems-iqn-prefix:
+    type: string
+    description: |
+      Base name of ISCSI Target. Get it from the web UI of the connected TrueNAS system by navigating to
+      Sharing -> Block(iscsi) -> Target Global Configuration -> Base Name
+    default: "iqn.2005-10.org.freenas.ctl"
+  ixsystems-datastore-pool:
+    type: string
+    description: "Base pool name on the connected TrueNAS/FreeNAS host e.g. 'tank'"
+    default:
+  ixsystems-dataset-path:
+    type: string
+    description: "Dataset name inside the pool, full path including pool"
+    default:
+  ixsystems-vendor-name:
+    type: string
+    description: "Vendor name"
+    default: "iXsystems"
+  ixsystems-storage-protocol:
+    type: string
+    description: "Storage protocol"
+    default: "iscsi"
+
+

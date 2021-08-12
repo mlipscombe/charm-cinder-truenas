@@ -1,0 +1,6 @@
+cinder-truenas:
+  ixsystems-api-key: "xxxxxxxxxx"
+  ixsystems-dataset-path: "rpool/cinder"
+  ixsystems-datastore-pool: "rpool"
+  ixsystems-server-hostname: "10.10.64.10"
+

@@ -1,17 +1,18 @@
 name: cinder-truenas
 summary: TrueNAS integration for OpenStack Block Storage
-maintainer: OpenStack Charmers <openstack-charmers@lists.ubuntu.com>
+maintainer: Mark Lipscombe <mark@lipscombe.com>
 description: |
  Cinder is the block storage service for the Openstack project.
  .
- This charm provides a TrueNAS backend for Cinder
+ This charm provides a TrueNAS backend for Cinder based on
+ https://github.com/mlipscombe/cinder-driver-truenas/
 tags:
   - openstack
   - storage
   - file-servers
   - misc
+  - truenas
 series:
-  - xenial
   - bionic
 subordinate: true
 provides:
